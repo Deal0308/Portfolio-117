@@ -1,0 +1,121 @@
+/* Responsive Design and the Breakpoints */
+
+/* Good practices: Add at least two media queries , one for tablet and one for phones */
+/* Following the Microsoft Doc */
+/* Phone or Small screen */
+/* @media (max-width: 640px) { 
+    //your style here
+}*/
+
+/* Tablet or Medium screen */
+/* @media (min-width: 641px) and (max-width: 1007px) { 
+    //your style here
+}
+
+Desktop or Big Screen
+    All the style that is outside a media query
+    html,font-size:14px*/
+
+
+    /* Tablet */
+@media (max-width: 1007px) {
+    html {
+        font-size: 12px;
+    }
+    /* Responsive design for the sections */
+    .about-section {
+        flex-direction: column;
+
+    }
+    .about-description-container {
+        width: 100%;
+
+    }
+    .about-image-container {
+    margin-bottom: 4rem;   
+
+    }
+    .project-card {
+        width: 100%;
+    }
+    .project-card a img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+        object-position: center 50%;
+    }
+    .project-card a {
+        width: 100%;
+        height: min-content;
+        flex-direction: column;
+    }
+    
+    
+
+}
+
+/* Phone */
+@media (max-width: 640px) {
+    html {
+        font-size: 10px;
+    }
+    label {
+        cursor: pointer;
+    }
+
+    header {
+        flex-direction: column;
+        height: max-content;
+        padding: 2%;
+    }
+    .nav-link{
+        flex-direction: column;
+    }
+
+ /* toggle function */
+.nav-btn{
+    display: inline-flex;
+}
+#nav-check:not(:checked)~.nav-link {
+    height: 0px;
+    overflow: hidden;
+    
+    }
+    
+    #nav-check:checked~.nav-link {
+        height: auto;
+        overflow: auto;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-top: 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        margin-bottom: 20px;
+    }
+
+    .about-section .left,
+    .about-section .right {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+footer {
+    flex-direction: column;
+    
+}
+footer nav {
+height: fit-content;
+}

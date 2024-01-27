@@ -1,0 +1,51 @@
+header {
+    background-color:var(--surface-color);
+    height: 60px;
+    position: sticky;
+    top: 0;
+
+}
+
+/* left side */
+.logo {
+    height: 100%;
+    width: 20%;
+
+}
+
+
+/* right side */
+nav {
+    height: 100%;
+    width: 80%;
+}
+.nav-link {
+    height: 100%;
+}
+.nav-link a {
+
+    color: var(--neutral-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    margin: 2%;
+    padding: 1% 2%;
+}
+.nav-link a:hover {
+    border-bottom: 2px solid var(--primary-color);
+    transition: all 0.3s ease 0s;
+}
+
+/* Hamburger button */
+
+.nav-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--neutral-color);
+    margin: 6px auto;
+}
+
+#nav-check, .nav-btn{
+    display: none;
+}

@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static './css/base.css' %}">
+    <link rel="stylesheet" href="{% static './css/header.css' %}">
+    <link rel="stylesheet" href="{% static './css/section.css' %}">
+    <link rel="stylesheet" href="{% static './css/footer.css' %}">
+    <link rel="stylesheet" href="{% static './css/responsive.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header class="center">
+        <div class="logo center">
+            <a href="">
+                <h2>Michael Deal</h2>
+            </a>
+
+        </div>
+        <nav>
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </label>
+
+
+            </div>
+
+            <div class="nav-link center">
+                <a href="">About me</a>
+                <a href="">Projects</a>
+                <a href="">Experience</a>
+                <a href="">Contact</a>
+
+            </div>
+        </nav>
+    </header>
+    {% block content %}
+    
+    
+    
+    {% endblock content %}
+    <footer>
+        <a href="">
+            <h2>Michael Deal</h2>
+        </a>
+            <nav class="nav-footer center">
+                <a href="">About Me</a>
+                <a href="">Projects</a>
+                <a href="">Experience</a>
+                <a href="">Contact</a>
+            </nav>
+        
+    </footer>
+
+
+
+    
+</body>
+</html>
