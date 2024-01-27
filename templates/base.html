@@ -17,7 +17,7 @@
 <body>
     <header class="center">
         <div class="logo center">
-            <a href="">
+            <a href="{% url 'about' %}">
                 <h2>Michael Deal</h2>
             </a>
 
@@ -26,7 +26,7 @@
             <input type="checkbox" id="nav-check">
             <div class="nav-btn">
                 <label for="nav-check">
-                    <span></span>
+                    <span></span>         
                     <span></span>
                     <span></span>
 
@@ -36,10 +36,10 @@
             </div>
 
             <div class="nav-link center">
-                <a href="">About me</a>
-                <a href="">Projects</a>
+                <a href="{% url 'about' %}">About me</a>
+                <a href="{% url 'projects_list' %}">Projects</a>
                 <a href="">Experience</a>
-                <a href="">Contact</a>
+                <a href="{% url 'contact' %}">Contact</a>
 
             </div>
         </nav>
@@ -54,9 +54,9 @@
             <h2>Michael Deal</h2>
         </a>
             <nav class="nav-footer center">
-                <a href="">About Me</a>
-                <a href="">Projects</a>
-                <a href="">Experience</a>
+                <a href="{% url 'about' %}">About Me</a>
+                <a href="{% url 'projects_list' %}">Projects</a>
+                <a href="{% url 'contact' %}">Experience</a>
                 <a href="">Contact</a>
             </nav>
         
