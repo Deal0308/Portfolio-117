@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+
+{% block title %}Experience{% endblock %} 
+{% load static %} 
+{% block content %}
+<section class="experience-section center-column">
+  <h2>Experience | Education</h2>
+  <div class="experience-list">
+    {% for experience in experience %}
+    <div class="experience-card">
+      <!-- add from the admin model -->
+
+      <p>{{ experience.entity }}</p>
+      <p>{{ experience.title }}</p>
+      <p>{{ experience.description }}</p>
+      <p>{{ experience.period }}</p>
+      <p>{{ experience.skill }}</p>
+
+      <div class="skills-container center">
+        {% for skill in experience.skill.all %}
+        <label>{{ skill.name }}</label>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock content %}

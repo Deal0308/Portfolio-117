@@ -96,3 +96,17 @@ p {
     padding:2rem;
     gap: 2rem;
 }
+
+.primary-button{
+    font-weight: bold;
+    background-color: var(--primary-color-300);
+    color: var(--neutral-color);
+    border: none;
+    padding: 2.5% 5%;
+    border-radius: 1rem;
+
+}
+
+.primary-button:hover{
+    background: linear-gradient(172deg, #A9F 5.07%, #7F66FF 92.93%);
+}
