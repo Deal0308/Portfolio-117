@@ -27,7 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '6e9b82183c23db'
+EMAIL_HOST_PASSWORD = '3c02723ea797f9'
+EMAIL_PORT = '2525'
 # Application definition
 
 INSTALLED_APPS = [

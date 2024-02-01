@@ -8,9 +8,14 @@
 <section class="contact-section center-column">
     <h2>Contact Me</h2>
     <p>Feel free to drop me a line below</p>
-    <p>we can stay up late and in the morning, I'm making the tamales!</p>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <button >Send</button>
+
+    <form id="emailForm" action="." method="post">
+        {% csrf_token %}
+        {{form.name}}
+        {{form.email}}
+        {{form.message}}
+        <button class="primary-button">Send Email</button>
+    </form>
 </section>
 
 {% endblock %}
