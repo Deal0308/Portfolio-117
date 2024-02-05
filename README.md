@@ -1,7 +1,7 @@
 # Portfolio-117
 Portfolio Project
 
-Welcome to my portfolio project! This project showcases my skills, experiences, and projects in the field of [insert your field or industry here]. Feel free to explore and reach out if you have any questions or opportunities for collaboration.
+Welcome to my portfolio project! This project showcases my skills, experiences, and projects in the field of coding. Feel free to explore and reach out if you have any questions or opportunities for collaboration.
 
 Table of Contents
 
@@ -27,7 +27,7 @@ Technologies Used
 HTML5
 CSS3
 JavaScript
-[Any additional libraries or frameworks you've used, e.g., Bootstrap, React, etc.]
+Bootstrap,Python,Django,React
 Setup
 
 To set up this project locally, follow these steps:
